@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+ls /usr/share/nginx/html/ || mkdir -p /usr/share/nginx/html/
 cp -R /resources/configuration/* /etc/nginx/
 cp -R /resources/release_note/* /usr/share/nginx/html/
 
